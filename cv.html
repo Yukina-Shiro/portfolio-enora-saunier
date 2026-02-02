@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV | Enora Saunier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <button class="burger-menu" aria-label="Ouvrir le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="hobbies.html">Passions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container" style="text-align: center;">
+        <section class="intro-section">
+            <h1>Mon Curriculum Vitae</h1>
+            <p>Vous pouvez visualiser mon parcours en détail ci-dessous ou télécharger le document.</p>
+            
+            <div style="margin-top: 2rem; margin-bottom: 3rem;">
+                <a href="assets/docs/mon_cv.pdf" class="btn btn-blue" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" style="margin-right:8px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Télécharger le PDF
+                </a>
+            </div>
+        </section>
+
+        <div class="pdf-container">
+            <object data="assets/docs/mon_cv.pdf" type="application/pdf" width="100%" height="800px">
+                <p>Votre navigateur ne peut pas afficher le PDF directement. 
+                <a href="assets/docs/mon_cv.pdf">Cliquez ici pour le télécharger.</a></p>
+            </object>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Enora Saunier | BUT Informatique.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

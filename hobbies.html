@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Passions | Enora Saunier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <button class="burger-menu" aria-label="Ouvrir le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="hobbies.html" class="active">Passions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="intro-section">
+            <h1>Mes Passions</h1>
+            <p>En dehors de mes études, voici les centres d'intérêt qui m'accompagnent au quotidien et nourrissent ma créativité.</p>
+        </section>
+
+        <div class="hobbies-list">
+
+            <article class="hobby-card">
+                <div class="hobby-image">
+                    <div class="img-placeholder" style="background: #e9d5ff; color: #581c87;">JAPON</div>
+                </div>
+                <div class="hobby-content">
+                    <h2>Culture Japonaise</h2>
+                    <p>
+                        La culture japonaise m'a toujours passionnée. D'aussi loin que je me souvienne, je regardais déjà des animes étant petite, comme <em>Dragon Ball</em> ou <em>One Piece</em>. 
+                        En sixième, je me suis inscrite au club Japon où j'ai appris les hiragana, les katakana, les haïkus et les origamis.
+                    </p>
+                    <a href="hobbies/japon.html" class="btn-link">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="hobby-card reverse">
+                <div class="hobby-image">
+                    <div class="img-placeholder" style="background: #fbcfe8; color: #be185d;">ART</div>
+                </div>
+                <div class="hobby-content">
+                    <h2>Arts Créatifs & Dessin</h2>
+                    <p>
+                        Je m'intéresse au dessin traditionnel et numérique. J'ai eu l'occasion de pratiquer la modélisation 3D sur SolidWorks au lycée, révélant une passion pour le design.
+                        J'aime dessiner dans le style manga, mais aussi réaliser des illustrations d'animaux et d'éléments naturels.
+                    </p>
+                    <a href="hobbies/arts.html" class="btn-link">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="hobby-card">
+                <div class="hobby-image">
+                    <div class="img-placeholder" style="background: #c4b5fd; color: #4c1d95;">JEUX</div>
+                </div>
+                <div class="hobby-content">
+                    <h2>Jeux Vidéo</h2>
+                    <p>
+                        Les jeux vidéo sont pour moi un moyen de m'évader, mais surtout de me connecter avec mes amis.
+                        J'apprécie particulièrement les RPG et les jeux de stratégie pour le challenge, ainsi que les jeux indépendants pour leur grande créativité.
+                    </p>
+                    <a href="hobbies/jeux-video.html" class="btn-link">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="hobby-card reverse">
+                <div class="hobby-image">
+                    <div class="img-placeholder" style="background: #bbf7d0; color: #14532d;">NATURE</div>
+                </div>
+                <div class="hobby-content">
+                    <h2>Nature & Animaux</h2>
+                    <p>
+                        Ayant grandi à la montagne, j’ai développé très tôt un lien fort avec la nature. J'ai fait partie de la section "Environnement Montagne" (SEM) durant mes 4 années de collège.
+                        Les animaux occupent une place importante dans ma vie et renforcent mon attachement au vivant.
+                    </p>
+                    <a href="hobbies/nature.html" class="btn-link">En savoir plus →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Enora Saunier | BUT Informatique.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
