@@ -881,6 +881,50 @@ nav a.active {
     opacity: 0.3;
 }
 
+/* --- STYLE DES IMAGES AVEC LÉGENDE (FIGURE) --- */
+
+/* Reset de la marge par défaut du navigateur sur figure */
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+/* Le conteneur de l'image */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    /* On garde l'aspect arrondi et l'ombre légère */
+    border-radius: 12px;
+    overflow: hidden; /* Important pour que l'image ne dépasse pas des coins arrondis */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px); /* Petit effet de levée au survol */
+}
+
+/* L'image elle-même */
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* On force une hauteur uniforme pour la grille */
+    object-fit: cover; /* L'image remplit la case sans être déformée (zoomée/rognée) */
+    display: block; /* Supprime l'espace vide sous l'image */
+    border-radius: 12px 12px 0 0; /* Arrondi seulement en haut si y'a une légende */
+}
+
+/* La légende (Caption) */
+figcaption {
+    background-color: #f9fafb; /* Fond très léger (gris pâle) */
+    color: #666; /* Texte gris pour ne pas être trop agressif */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic; /* Style élégant pour les légendes */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #f0f0f0;
+    border-top: none; /* Pas de bordure entre image et texte */
+}
 
 /* --- RESPONSIVE NAVIGATION (MOBILE) --- */
 
