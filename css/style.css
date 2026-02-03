@@ -10,6 +10,10 @@
     --accent-blue: #2563eb; /* Bleu "Tech" (boutons À Propos) */
     --accent-purple: #8b5cf6; /* Violet "Passion" (boutons Projets/Soft Skills) */
     --accent-dark: #000000; /* Noir pour boutons contact */
+
+    /* Couleur de fond */
+    --bg-color-blue: #1e3a8a ; /* Bleu foncé pour la lisibilité du texte blanc */
+    --bg-color-purple: #581c87; /* Violet foncé pour la lisibilité du texte blanc */
     
     /* Autres */
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne sans-serif */
@@ -131,7 +135,7 @@ h1 {
     position: relative;
 }
 
-/* L'ID demandé pour l'image */
+/* L'ID pour l'image */
 #hero-profile-pic {
     width: 350px;
     height: 350px;
@@ -233,17 +237,17 @@ footer {
 .text-blue { color: var(--accent-blue); border-color: var(--accent-blue); }
 .text-purple { color: var(--accent-purple); border-color: var(--accent-purple); }
 
-/* Conteneur des Tags (Flexbox magique) */
+/* Conteneur des Tags (Flexbox) */
 .tags-container {
     display: flex;
     flex-wrap: wrap; /* Permet de passer à la ligne */
     gap: 12px; /* Espace entre les tags */
 }
 
-/* Le design du Tag (la "pilule") */
+/* Le design du Tag (arrondis) */
 .tag {
     padding: 8px 16px;
-    border-radius: 8px; /* Coins légèrement arrondis comme sur le screen */
+    border-radius: 8px; /* Coins légèrement arrondis */
     color: white;
     font-weight: 600;
     font-size: 0.95rem;
@@ -257,10 +261,10 @@ footer {
 }
 
 /* Variantes de couleurs */
-.tag-blue { background-color: #1e3a8a; /* Bleu foncé comme sur le screen */ }
+.tag-blue { background-color: var(--bg-color-blue); /* Bleu foncé */ }
 /* Si tu préfères le bleu clair du bouton accueil, remplace par var(--accent-blue) */
 
-.tag-purple { background-color: #581c87; /* Violet foncé comme sur le screen */ }
+.tag-purple { background-color: var(--bg-color-purple); /* Violet foncé comme sur le screen */ }
 
 /* Indicateur de page active dans le menu */
 nav a.active {
@@ -696,6 +700,111 @@ nav a.active {
         height: 500px;
     }
 }
+
+
+/* --- PAGE DÉTAIL PROJET --- */
+
+.back-link {
+    color: var(--accent-blue);
+    font-weight: 600;
+    transition: margin-left 0.2s;
+}
+
+.back-link:hover {
+    margin-left: -5px; /* Petite animation vers la gauche */
+    text-decoration: underline;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-banner {
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+/* Grille layout : Sidebar + Contenu */
+.project-details-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Sidebar de 300px, le reste pour le texte */
+    gap: 3rem;
+    align-items: start; /* Aligner en haut */
+}
+
+/* Sidebar (Fiche technique) */
+.info-box {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--accent-purple);
+}
+
+.info-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+/* Contenu Principal */
+.project-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-left: 4px solid var(--accent-blue);
+    padding-left: 15px;
+}
+
+.project-content h2:first-child {
+    margin-top: 0;
+}
+
+.content-list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Galerie simple */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+/* Responsive Projet */
+@media (max-width: 850px) {
+    .project-details-grid {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .project-sidebar {
+        order: -1; /* La fiche technique passe au dessus du texte sur mobile ? ou enlever pour laisser en dessous */
+        margin-bottom: 2rem;
+    }
+}
+
 
 /* --- RESPONSIVE NAVIGATION (MOBILE) --- */
 
