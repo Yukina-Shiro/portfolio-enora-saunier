@@ -805,6 +805,82 @@ nav a.active {
     }
 }
 
+/* --- PAGE DÉTAIL PASSION --- */
+
+.hobby-header {
+    margin-bottom: 3rem;
+}
+
+.hobby-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-purple); /* Titre en violet pour les passions */
+}
+
+.hobby-banner {
+    height: 300px; /* Moins haut que la bannière projet si tu veux */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Sidebar "Favoris" spécifique */
+.favorites-box {
+    background: #faf5ff; /* Fond violet très très pâle */
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e9d5ff; /* Bordure violette pâle */
+}
+
+.favorites-box h3 {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e9d5ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.favorite-item {
+    margin-bottom: 1.2rem;
+}
+
+.fav-label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.fav-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Citation / Fun Fact */
+.hobby-quote {
+    margin-top: 2rem;
+    font-style: italic;
+    color: var(--accent-purple);
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.hobby-quote::before {
+    content: "❝";
+    font-size: 2rem;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    opacity: 0.3;
+}
+
 
 /* --- RESPONSIVE NAVIGATION (MOBILE) --- */
 
