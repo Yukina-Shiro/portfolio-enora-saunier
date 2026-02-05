@@ -1,759 +1,1090 @@
 /* --- VARIABLES & RESET --- */
 :root {
-    /* Palette de couleurs */
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --nav-bg: #1f1f1f; /* Gris très foncé pour le menu */
-    --nav-text: #ffffff;
-    
-    /* Couleurs d'accentuation */
-    --accent-blue: #2563eb; /* Bleu "Tech" (boutons À Propos) */
-    --accent-purple: #8b5cf6; /* Violet "Passion" (boutons Projets/Soft Skills) */
-    --accent-dark: #000000; /* Noir pour boutons contact */
-    
-    /* Autres */
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne sans-serif */
-    --radius-btn: 50px; /* Boutons très arrondis comme sur tes screens */
+  /* Palette de couleurs */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg: #1f1f1f; /* Gris très foncé pour le menu */
+  --nav-text: #ffffff;
+
+  /* Couleurs d'accentuation */
+  --accent-blue: #2563eb; /* Bleu "Tech" (boutons À Propos) */
+  --accent-purple: #8b5cf6; /* Violet "Passion" (boutons Projets/Soft Skills) */
+  --accent-dark: #000000; /* Noir pour boutons contact */
+
+  /* Couleur de fond */
+  --bg-color-blue: #1e3a8a; /* Bleu foncé pour la lisibilité du texte blanc */
+  --bg-color-purple: #581c87; /* Violet foncé pour la lisibilité du texte blanc */
+
+  /* Autres */
+  --font-main:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Police moderne sans-serif */
+  --radius-btn: 50px; /* Boutons très arrondis comme sur tes screens */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-main);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding-top: 80px; /* Pour compenser le menu fixe */
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-top: 80px; /* Pour compenser le menu fixe */
 }
 
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
 
 /* --- HEADER & NAVIGATION (STICKY) --- */
 header {
-    background-color: var(--nav-bg);
-    color: var(--nav-text);
-    padding: 1rem 2rem;
-    position: fixed; /* Collé en haut */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Au-dessus de tout */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: space-between; /* Espace entre Accueil et le reste */
-    align-items: center;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 1rem 2rem;
+  position: fixed; /* Collé en haut */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Au-dessus de tout */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between; /* Espace entre Accueil et le reste */
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-    font-weight: 500;
-    transition: color 0.3s;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: var(--accent-purple); /* Petit effet au survol */
+  color: var(--accent-purple); /* Petit effet au survol */
 }
 
 /* --- SECTION HERO (ACCUEIL) --- */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 10%;
-    min-height: 80vh; /* Prend une bonne partie de l'écran */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  min-height: 80vh; /* Prend une bonne partie de l'écran */
 }
 
 .hero-content {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: var(--accent-purple); /* Sous-titre en violet */
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--accent-purple); /* Sous-titre en violet */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .intro-text {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
 /* Bandeau Stage */
 .stage-banner {
-    background-color: #fef3c7; /* Jaune pâle/beige */
-    border-left: 5px solid #d97706; /* Bordure orange */
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #92400e;
+  background-color: #fef3c7; /* Jaune pâle/beige */
+  border-left: 5px solid #d97706; /* Bordure orange */
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #92400e;
 }
 
 /* Boutons d'action */
 .cta-group {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
-    padding: 10px 25px;
-    border-radius: var(--radius-btn);
-    color: white;
-    font-weight: bold;
-    transition: transform 0.2s;
+  padding: 10px 25px;
+  border-radius: var(--radius-btn);
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
 }
 
-.btn:hover { transform: translateY(-3px); }
+.btn:hover {
+  transform: translateY(-3px);
+}
 
-.btn-blue { background-color: var(--accent-blue); }
-.btn-purple { background-color: var(--accent-purple); }
-.btn-black { background-color: var(--accent-dark); }
+.btn-blue {
+  background-color: var(--accent-blue);
+}
+.btn-purple {
+  background-color: var(--accent-purple);
+}
+.btn-black {
+  background-color: var(--accent-dark);
+}
 
 /* --- IMAGE DE PROFIL --- */
 .hero-image {
-    position: relative;
+  position: relative;
 }
 
-/* L'ID demandé pour l'image */
+/* L'ID pour l'image */
 #hero-profile-pic {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%; /* Cercle parfait */
-    border: 5px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Ombre douce */
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%; /* Cercle parfait */
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Ombre douce */
 }
 
 /* --- FOOTER --- */
 footer {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    font-size: 0.9rem;
-    color: #666;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .footer-links {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-links a {
-    margin: 0 10px;
-    font-weight: bold;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
 /* --- ICONES SVG --- */
 .icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle; /* Aligne l'icône avec le texte */
-    fill: none; /* Pas de remplissage par défaut */
-    stroke: currentColor; /* Prend la couleur du texte parent */
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle; /* Aligne l'icône avec le texte */
+  fill: none; /* Pas de remplissage par défaut */
+  stroke: currentColor; /* Prend la couleur du texte parent */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Ajustement spécifique pour l'icône maison du menu */
 .nav-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Ajustement pour la loupe dans le bandeau */
 .banner-icon {
-    margin-right: 8px; /* Espace entre la loupe et le texte */
+  margin-right: 8px; /* Espace entre la loupe et le texte */
 }
 
 /* --- PAGES INTERNES (Standards) --- */
 .page-container {
-    max-width: 900px;
-    margin: 0 auto; /* Centre le contenu */
-    padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto; /* Centre le contenu */
+  padding: 2rem;
 }
 
 .intro-section {
-    margin-bottom: 3rem;
-    text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .intro-section h1 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Ligne de séparation subtile entre les sections */
 .divider {
-    border: 0;
-    height: 1px;
-    background: #e0e0e0;
-    margin: 3rem 0;
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 3rem 0;
 }
 
 /* --- STYLE DES COMPÉTENCES (SKILLS) --- */
 
 .skills-block {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .skills-block h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    border-left: 5px solid #333; /* Petit accent visuel à gauche du titre */
-    padding-left: 15px;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #333; /* Petit accent visuel à gauche du titre */
+  padding-left: 15px;
 }
 
 /* Titres des sous-catégories (ex: Langages...) */
 .skill-category-title {
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    padding-bottom: 5px;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 /* Couleurs de texte spécifiques */
-.text-blue { color: var(--accent-blue); border-color: var(--accent-blue); }
-.text-purple { color: var(--accent-purple); border-color: var(--accent-purple); }
-
-/* Conteneur des Tags (Flexbox magique) */
-.tags-container {
-    display: flex;
-    flex-wrap: wrap; /* Permet de passer à la ligne */
-    gap: 12px; /* Espace entre les tags */
+.text-blue {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+.text-purple {
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
 }
 
-/* Le design du Tag (la "pilule") */
+/* Conteneur des Tags (Flexbox) */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à la ligne */
+  gap: 12px; /* Espace entre les tags */
+}
+
+/* Le design du Tag (arrondis) */
 .tag {
-    padding: 8px 16px;
-    border-radius: 8px; /* Coins légèrement arrondis comme sur le screen */
-    color: white;
-    font-weight: 600;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-    cursor: default; /* Pas de curseur "main" car ce n'est pas un lien */
+  padding: 8px 16px;
+  border-radius: 8px; /* Coins légèrement arrondis */
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: default; /* Pas de curseur "main" car ce n'est pas un lien */
 }
 
 .tag:hover {
-    transform: translateY(-2px); /* Petit effet de saut au survol */
+  transform: translateY(-2px); /* Petit effet de saut au survol */
 }
 
 /* Variantes de couleurs */
-.tag-blue { background-color: #1e3a8a; /* Bleu foncé comme sur le screen */ }
+.tag-blue {
+  background-color: var(--bg-color-blue); /* Bleu foncé */
+}
 /* Si tu préfères le bleu clair du bouton accueil, remplace par var(--accent-blue) */
 
-.tag-purple { background-color: #581c87; /* Violet foncé comme sur le screen */ }
+.tag-purple {
+  background-color: var(
+    --bg-color-purple
+  ); /* Violet foncé comme sur le screen */
+}
 
 /* Indicateur de page active dans le menu */
 nav a.active {
-    color: var(--accent-purple);
-    font-weight: bold;
+  color: var(--accent-purple);
+  font-weight: bold;
 }
 
 /* --- PAGE À PROPOS (TIMELINE) --- */
 
 .section-title-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 2rem;
-    color: var(--accent-blue);
-    margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  color: var(--accent-blue);
+  margin-top: 3rem;
 }
 
 .title-icon {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 /* La ligne verticale */
 .timeline {
-    position: relative;
-    border-left: 3px solid #e5e7eb; /* Gris très clair pour la ligne */
-    margin-left: 10px; /* Espace à gauche */
-    padding-left: 30px; /* Espace entre la ligne et le contenu */
+  position: relative;
+  border-left: 3px solid #e5e7eb; /* Gris très clair pour la ligne */
+  margin-left: 10px; /* Espace à gauche */
+  padding-left: 30px; /* Espace entre la ligne et le contenu */
 }
 
 .timeline-item {
-    margin-bottom: 3rem;
-    position: relative;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 /* Le point (dot) sur la timeline */
 .timeline-dot {
-    position: absolute;
-    left: -38px; /* Ajustement pour centrer sur la ligne */
-    top: 5px; /* Alignement avec le titre */
-    width: 16px;
-    height: 16px;
-    background-color: var(--bg-color); /* Centre blanc */
-    border: 4px solid var(--accent-blue); /* Contour bleu */
-    border-radius: 50%;
-    z-index: 1;
+  position: absolute;
+  left: -38.5px; /* Ajustement pour centrer sur la ligne */
+  top: 5px; /* Alignement avec le titre */
+  width: 16px;
+  height: 16px;
+  background-color: var(--bg-color); /* Centre blanc */
+  border: 4px solid var(--accent-blue); /* Contour bleu */
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* Le contenu (la boîte) */
 .timeline-content {
-    background: #ffffff;
-    border: 1px solid #f0f0f0; /* Bordure très subtile */
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Ombre légère et moderne */
-    transition: transform 0.2s;
+  background: #ffffff;
+  border: 1px solid #f0f0f0; /* Bordure très subtile */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Ombre légère et moderne */
+  transition: transform 0.2s;
 }
 
 .timeline-content:hover {
-    transform: translateX(5px); /* Petit mouvement au survol */
-    border-color: var(--accent-blue); /* La bordure devient bleue */
+  transform: translateX(5px); /* Petit mouvement au survol */
+  border-color: var(--accent-blue); /* La bordure devient bleue */
 }
 
 .timeline-content h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .timeline-date {
-    display: block;
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .timeline-content ul {
-    margin-top: 10px;
-    margin-left: 20px;
-    list-style-type: disc;
-    color: #555;
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #555;
 }
 
 /* --- SECTION OBJECTIFS & ALERTES --- */
 
 .objective-box {
-    background-color: #fafafa; /* Fond très légèrement gris */
-    padding: 2rem;
-    border-radius: 12px;
-    border-left: 5px solid var(--accent-purple); /* Rappel couleur Passion */
+  background-color: #fafafa; /* Fond très légèrement gris */
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--accent-purple); /* Rappel couleur Passion */
 }
 
 .stage-alert {
-    margin-top: 1.5rem;
-    background-color: #eef2ff; /* Fond bleu très pâle */
-    color: #1e40af; /* Texte bleu foncé */
-    padding: 15px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #c7d2fe;
+  margin-top: 1.5rem;
+  background-color: #eef2ff; /* Fond bleu très pâle */
+  color: #1e40af; /* Texte bleu foncé */
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c7d2fe;
 }
 
 /* --- PAGE PROJETS --- */
 
 /* Zone des filtres */
 .filters-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 3rem;
 }
 
 .filter-btn {
-    padding: 10px 20px;
-    border: 2px solid #e5e7eb;
-    background: transparent;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #666;
+  padding: 10px 20px;
+  border: 2px solid #e5e7eb;
+  background: transparent;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
 }
 
 .filter-btn:hover {
-    border-color: var(--accent-purple);
-    color: var(--accent-purple);
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
 }
 
 /* Le filtre actif est coloré */
 .filter-btn.active {
-    background-color: var(--accent-purple);
-    border-color: var(--accent-purple);
-    color: white;
+  background-color: var(--accent-purple);
+  border-color: var(--accent-purple);
+  color: white;
 }
 
 /* Grille des projets */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive auto */
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Responsive auto */
+  gap: 30px;
 }
 
 /* Carte Projet */
 .project-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden; /* Pour que l'image ne dépasse pas */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0f0f0;
-    display: flex; /* Flex pour aligner le footer de la carte */
-    flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden; /* Pour que l'image ne dépasse pas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  display: flex; /* Flex pour aligner le footer de la carte */
+  flex-direction: column;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Image du projet (ou placeholder) */
 .card-image {
-    height: 160px;
-    background-color: #f3f4f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 160px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 /* Contenu texte de la carte */
 .card-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Remplit l'espace restant */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Remplit l'espace restant */
 }
 
 .card-content h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .card-tags {
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .mini-tag {
-    font-size: 0.75rem;
-    background-color: #eef2ff;
-    color: var(--accent-blue);
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 600;
+  font-size: 0.75rem;
+  background-color: #eef2ff;
+  color: var(--accent-blue);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .card-content p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    flex-grow: 1; /* Pousse le bouton vers le bas */
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Pousse le bouton vers le bas */
 }
 
 .btn-link {
-    color: var(--accent-purple);
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: margin-left 0.2s;
+  color: var(--accent-purple);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: margin-left 0.2s;
 }
 
 .btn-link:hover {
-    margin-left: 5px; /* Petite animation flèche qui bouge */
+  margin-left: 5px; /* Petite animation flèche qui bouge */
 }
 
 /* Animation d'apparition/disparition pour le filtre */
 .project-card.hidden {
-    display: none;
+  display: none;
 }
 
 /* --- PAGE PASSIONS (Magazine Layout) --- */
 
 .hobbies-list {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem; /* Grand espace entre chaque passion pour aérer */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Grand espace entre chaque passion pour aérer */
 }
 
 .hobby-card {
-    display: flex;
-    align-items: center; /* Centre verticalement texte et image */
-    gap: 3rem;
+  display: flex;
+  align-items: center; /* Centre verticalement texte et image */
+  gap: 3rem;
 }
 
 /* Variante inversée (Texte à gauche, Image à droite) */
 .hobby-card.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .hobby-image {
-    flex: 1; /* Prend 1 part de l'espace */
-    height: 250px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    /* Optionnel : petite rotation pour le style "scrapbook" */
-    transition: transform 0.3s ease;
+  flex: 1; /* Prend 1 part de l'espace */
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Optionnel : petite rotation pour le style "scrapbook" */
+  transition: transform 0.3s ease;
 }
 
 .hobby-card:hover .hobby-image {
-    transform: scale(1.02); /* Zoom léger au survol */
+  transform: scale(1.02); /* Zoom léger au survol */
 }
 
 /* Réutilisation de ta classe placeholder mais plus grande */
 .hobby-image .img-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .hobby-content {
-    flex: 1.2; /* Le texte prend un peu plus de place que l'image (ratio 1.2 vs 1) */
+  flex: 1.2; /* Le texte prend un peu plus de place que l'image (ratio 1.2 vs 1) */
 }
 
 .hobby-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--accent-purple); /* Titre en violet */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent-purple); /* Titre en violet */
 }
 
 .hobby-content p {
-    margin-bottom: 1.5rem;
-    color: #444;
-    line-height: 1.7;
-    text-align: justify; /* Texte justifié pour faire "pro" comme un magazine */
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.7;
+  text-align: justify; /* Texte justifié pour faire "pro" comme un magazine */
+}
+
+/* Style des images dans la liste des passions */
+.hobby-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplit tout le cadre sans déformer l'image */
+  transition: transform 0.5s ease; /* Transition douce pour le zoom */
+}
+
+/* Petit effet de zoom quand on passe la souris sur la carte */
+.hobby-card:hover .hobby-image img {
+  transform: scale(1.1);
 }
 
 /* --- RESPONSIVE POUR PASSIONS --- */
 @media (max-width: 768px) {
-    .hobby-card, 
-    .hobby-card.reverse {
-        flex-direction: column; /* Sur mobile, tout en colonne */
-        gap: 1.5rem;
-    }
+  .hobby-card,
+  .hobby-card.reverse {
+    flex-direction: column; /* Sur mobile, tout en colonne */
+    gap: 1.5rem;
+  }
 
-    .hobby-image {
-        width: 100%; /* L'image prend toute la largeur */
-        height: 200px;
-    }
+  .hobby-image {
+    width: 100%; /* L'image prend toute la largeur */
+    height: 200px;
+  }
 
-    .hobby-content {
-        text-align: left; /* On enlève le justifié sur mobile parfois illisible */
-    }
+  .hobby-content {
+    text-align: left; /* On enlève le justifié sur mobile parfois illisible */
+  }
+}
+
+/* Style pour les images de bannières */
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Coupe l'image pour qu'elle remplisse le cadre sans déformation */
+  display: block;
+}
+
+/* --- GESTION IMAGES & PLACEHOLDERS --- */
+
+/* On s'assure que les conteneurs permettent la superposition */
+.hobby-banner,
+.hobby-image,
+.card-image,
+.project-banner {
+  position: relative; /* Indispensable pour positionner l'image par dessus */
+  overflow: hidden; /* Coupe ce qui dépasse */
+}
+
+/* Classe pour l'image qui vient recouvrir le placeholder */
+.cover-img {
+  position: absolute; /* Se détache du flux pour aller par-dessus */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplit bien le cadre */
+  z-index: 2; /* S'assure d'être au-dessus du texte du placeholder */
+  background-color: #fff; /* Fond blanc au cas où l'image est transparente */
 }
 
 /* --- PAGE CONTACT --- */
 
 .contact-wrapper {
-    display: flex;
-    gap: 4rem;
-    margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
 }
 
 /* Colonne Info (Gauche) */
 .contact-info {
-    flex: 1;
+  flex: 1;
+}
+
+.contact-form-container.simple-mode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form-container.simple-mode h3 {
+  margin-bottom: 1rem;
+  color: var(--accent-blue);
+}
+
+.contact-form-container.simple-mode p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Style spécifique pour le gros bouton Email */
+.btn-email-large {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .info-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .icon-circle {
-    width: 50px;
-    height: 50px;
-    background-color: #f3f4f6; /* Gris très clair */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-blue);
-    transition: background-color 0.3s, color 0.3s;
+  width: 50px;
+  height: 50px;
+  background-color: #f3f4f6; /* Gris très clair */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .info-item:hover .icon-circle {
-    background-color: var(--accent-blue);
-    color: white;
+  background-color: var(--accent-blue);
+  color: white;
 }
 
 .info-label {
-    display: block;
-    font-size: 0.85rem;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .info-link {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
 .info-link:hover {
-    color: var(--accent-blue);
-    text-decoration: underline;
+  color: var(--accent-blue);
+  text-decoration: underline;
 }
 
 /* Formulaire (Droite) */
 .contact-form-container {
-    flex: 1.5;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    border: 1px solid #f0f0f0;
+  flex: 1.5;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px; /* Coins arrondis pour tes champs */
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px; /* Coins arrondis pour tes champs */
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-blue); /* Focus bleu */
+  outline: none;
+  border-color: var(--accent-blue); /* Focus bleu */
 }
 
 /* Responsive Contact */
 @media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column; /* Empile les infos et le formulaire */
-        gap: 3rem;
-    }
+  .contact-wrapper {
+    flex-direction: column; /* Empile les infos et le formulaire */
+    gap: 3rem;
+  }
 }
 
 /* --- PAGE CV --- */
 
 .pdf-container {
-    background: #525659; /* Fond gris type "Reader" */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: #525659; /* Fond gris type "Reader" */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Ajustement hauteur PDF sur mobile */
 @media (max-width: 768px) {
-    .pdf-container object {
-        height: 500px;
-    }
+  .pdf-container object {
+    height: 500px;
+  }
+}
+
+/* --- PAGE DÉTAIL PROJET --- */
+
+.back-link {
+  color: var(--accent-blue);
+  font-weight: 600;
+  transition: margin-left 0.2s;
+}
+
+.back-link:hover {
+  margin-left: -5px; /* Petite animation vers la gauche */
+  text-decoration: underline;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-banner {
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Grille layout : Sidebar + Contenu */
+.project-details-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Sidebar de 300px, le reste pour le texte */
+  gap: 3rem;
+  align-items: start; /* Aligner en haut */
+}
+
+/* Sidebar (Fiche technique) */
+.info-box {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.info-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--accent-purple);
+}
+
+.info-list li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+/* Contenu Principal */
+.project-content h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-left: 4px solid var(--accent-blue);
+  padding-left: 15px;
+}
+
+.project-content h2:first-child {
+  margin-top: 0;
+}
+
+.content-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Galerie simple */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+/* Responsive Projet */
+@media (max-width: 850px) {
+  .project-details-grid {
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
+
+  .project-sidebar {
+    order: -1; /* La fiche technique passe au dessus du texte sur mobile ? ou enlever pour laisser en dessous */
+    margin-bottom: 2rem;
+  }
+}
+
+/* --- PAGE DÉTAIL PASSION --- */
+
+.hobby-header {
+  margin-bottom: 3rem;
+}
+
+.hobby-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-purple); /* Titre en violet pour les passions */
+}
+
+.hobby-banner {
+  height: 300px; /* Moins haut que la bannière projet si tu veux */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar "Favoris" spécifique */
+.favorites-box {
+  background: #faf5ff; /* Fond violet très très pâle */
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e9d5ff; /* Bordure violette pâle */
+}
+
+.favorites-box h3 {
+  color: var(--accent-purple);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e9d5ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.favorite-item {
+  margin-bottom: 1.2rem;
+}
+
+.fav-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.fav-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Citation / Fun Fact */
+.hobby-quote {
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--accent-purple);
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+
+.hobby-quote::before {
+  content: "❝";
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  opacity: 0.3;
+}
+
+/* --- STYLE DES IMAGES AVEC LÉGENDE (FIGURE) --- */
+
+/* Reset de la marge par défaut du navigateur sur figure */
+figure {
+  margin: 0;
+  width: 100%;
+}
+
+/* Le conteneur de l'image */
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  /* On garde l'aspect arrondi et l'ombre légère */
+  border-radius: 12px;
+  overflow: hidden; /* Important pour que l'image ne dépasse pas des coins arrondis */
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-3px); /* Petit effet de levée au survol */
+}
+
+/* L'image elle-même */
+.gallery-item img {
+  width: 100%;
+  height: 200px; /* On force une hauteur uniforme pour la grille */
+  object-fit: cover; /* L'image remplit la case sans être déformée (zoomée/rognée) */
+  display: block; /* Supprime l'espace vide sous l'image */
+  border-radius: 12px 12px 0 0; /* Arrondi seulement en haut si y'a une légende */
+}
+
+/* La légende (Caption) */
+figcaption {
+  background-color: #f9fafb; /* Fond très léger (gris pâle) */
+  color: #666; /* Texte gris pour ne pas être trop agressif */
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic; /* Style élégant pour les légendes */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 1px solid #f0f0f0;
+  border-top: none; /* Pas de bordure entre image et texte */
 }
 
 /* --- RESPONSIVE NAVIGATION (MOBILE) --- */
 
 /* Par défaut (Desktop), on cache le bouton burger */
 .burger-menu {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--nav-text);
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  color: var(--nav-text);
+  cursor: pointer;
 }
 
 /* Écran tablette et mobile (moins de 768px) */
 @media (max-width: 768px) {
-    
-    /* On affiche le burger */
-    .burger-menu {
-        display: block;
-    }
+  /* On affiche le burger */
+  .burger-menu {
+    display: block;
+  }
 
-    /* On modifie la liste des liens pour qu'elle devienne verticale et cachée */
-    .nav-links {
-        position: absolute;
-        top: 70px; /* Juste en dessous du header */
-        right: 0;
-        background-color: var(--nav-bg); /* Même couleur que le header */
-        width: 100%; /* Prend toute la largeur */
-        flex-direction: column; /* Vertical */
-        align-items: center;
-        padding: 20px 0;
-        gap: 25px;
-        /* Animation d'apparition */
-        transform: translateY(-150%); /* Caché vers le haut */
-        transition: transform 0.3s ease-in-out;
-        z-index: 999;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    }
+  /* On modifie la liste des liens pour qu'elle devienne verticale et cachée */
+  .nav-links {
+    position: absolute;
+    top: 70px; /* Juste en dessous du header */
+    right: 0;
+    background-color: var(--nav-bg); /* Même couleur que le header */
+    width: 100%; /* Prend toute la largeur */
+    flex-direction: column; /* Vertical */
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+    /* Animation d'apparition */
+    transform: translateY(-150%); /* Caché vers le haut */
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
 
-    /* Classe qui sera ajoutée par Javascript pour afficher le menu */
-    .nav-links.nav-active {
-        transform: translateY(0); /* On le ramène à sa place */
-    }
+  /* Classe qui sera ajoutée par Javascript pour afficher le menu */
+  .nav-links.nav-active {
+    transform: translateY(0); /* On le ramène à sa place */
+  }
 
-    /* Ajustement de la section Hero sur mobile pour que ça respire */
-    .hero {
-        flex-direction: column-reverse; /* Image en haut, texte en bas sur mobile ? Ou l'inverse. */
-        text-align: center;
-        padding: 2rem 5%;
-        justify-content: center;
-    }
+  /* Ajustement de la section Hero sur mobile pour que ça respire */
+  .hero {
+    flex-direction: column-reverse; /* Image en haut, texte en bas sur mobile ? Ou l'inverse. */
+    text-align: center;
+    padding: 2rem 5%;
+    justify-content: center;
+  }
 
-    .hero-image img {
-        width: 200px; /* Image plus petite sur mobile */
-        height: 200px;
-        margin-bottom: 2rem;
-    }
+  .hero-image img {
+    width: 200px; /* Image plus petite sur mobile */
+    height: 200px;
+    margin-bottom: 2rem;
+  }
 
-    .cta-group {
-        justify-content: center; /* Boutons centrés */
-    }
+  .cta-group {
+    justify-content: center; /* Boutons centrés */
+  }
 }

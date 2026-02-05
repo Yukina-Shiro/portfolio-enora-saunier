@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie | Enora Saunier</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <button class="burger-menu" aria-label="Ouvrir le menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../about.html">À Propos</a></li>
+                <li><a href="../projects.html" class="active">Projets</a></li>
+                <li><a href="../skills.html">Compétences</a></li>
+                <li><a href="../hobbies.html">Passions</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        
+        <div style="margin-bottom: 2rem;">
+            <a href="../projects.html" class="back-link">← Retour aux projets</a>
+        </div>
+
+        <section class="project-header">
+            <h1>Jeu de la Vie</h1> 
+            <p class="subtitle">Simulation de l'automate cellulaire de John Conway</p>
+            
+            <div class="tags-container" style="justify-content: center; margin-top: 1rem;">
+                <span class="tag tag-blue">Langage C</span>
+                <span class="tag tag-blue">HTML5 / CSS3</span>
+                <span class="tag tag-purple">Algorithmique</span>
+            </div>
+        </section>
+
+        <div class="project-banner">
+            <div class="img-placeholder" style="height: 300px; background: #0f172a; color: white; border-radius: 12px; display:flex; align-items:center; justify-content:center;">
+                VISUEL DE LA GRILLE (SIMULATION)
+            </div>
+        </div>
+
+        <div class="project-details-grid">
+            
+            <aside class="project-sidebar">
+                <div class="info-box">
+                    <h3>Fiche Technique</h3>
+                    <ul class="info-list">
+                        <li><strong>Année :</strong> 2024</li>
+                        <li><strong>Type :</strong> Projet Universitaire</li>
+                        <li><strong>Rôle :</strong> Programmation & Webdesign</li>
+                        <li><strong>Langages :</strong> C, HTML, CSS</li>
+                    </ul>
+                    
+                    <hr class="divider" style="margin: 1.5rem 0;">
+                    
+                    <h3>Liens</h3>
+                    <a href="#" target="_blank" class="btn btn-black" style="width:100%; display:block; text-align:center; font-size:0.9rem;">
+                        Voir sur GitHub ↗
+                    </a>
+                </div>
+            </aside>
+
+            <div class="project-content">
+                
+                <h2>Le Contexte</h2>
+                <p>
+                    Le "Jeu de la Vie" est un automate cellulaire imaginé par le mathématicien John Conway. C'est un "jeu à zéro joueur" : son évolution est déterminée uniquement par l'état initial.
+                    Notre objectif était double : coder la logique complexe de cet automate en <strong>Langage C</strong> et créer un site web interactif pour expliquer nos choix d'algorithmes et présenter le projet.
+                </p>
+
+                <h2>Mes Missions & Réalisations</h2>
+                <p>J'ai travaillé sur les deux facettes du projet, l'algorithmique et la présentation :</p>
+                <ul class="content-list">
+                    <li><strong>Algorithmique en C :</strong> Implémentation des règles de naissance, de survie et de mort des cellules au sein d'une grille. Gestion des tableaux à deux dimensions et optimisation des boucles.</li>
+                    <li><strong>Structure Web :</strong> Création d'un site vitrine complet en HTML5 pour documenter le projet.</li>
+                    <li><strong>Design Responsive :</strong> Utilisation de CSS3 pour rendre le site agréable et lisible sur tous les supports (ordinateur et mobile).</li>
+                </ul>
+
+                <h2>Ce que j'ai appris</h2>
+                <p>
+                    Ce projet a été très formateur sur la <strong>rigueur logique</strong> nécessaire à la programmation en C (gestion de la mémoire, boucles imbriquées).
+                    Il m'a aussi permis de faire mes premiers pas dans la structuration d'un site web responsive, une compétence clé pour présenter ses travaux techniques.
+                </p>
+
+                <h2>Galerie</h2>
+                <div class="gallery-grid">
+                    <div style="background:#eee; height:150px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#888;">Console (Code C)</div>
+                    <div style="background:#eee; height:150px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#888;">Site Web</div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Enora Saunier | BUT Informatique.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
