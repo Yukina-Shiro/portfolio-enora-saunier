@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub | Enora Saunier</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" aria-label="Accueil">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon nav-icon"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </a>
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../about.html">À Propos</a></li>
+          <li><a href="../projects.html" class="active">Projets</a></li>
+          <li><a href="../skills.html">Compétences</a></li>
+          <li><a href="../hobbies.html">Passions</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <div style="margin-bottom: 2rem">
+        <a href="../projects.html" class="back-link">← Retour aux projets</a>
+      </div>
+
+      <section class="project-header">
+        <h1>GameHub</h1>
+        <p class="subtitle">Réseau social dédié aux passionnés de jeux vidéo</p>
+
+        <div
+          class="tags-container"
+          style="justify-content: center; margin-top: 1rem"
+        >
+          <span class="tag tag-blue">PHP / MVC</span>
+          <span class="tag tag-blue">MySQL</span>
+          <span class="tag tag-purple">Full Stack</span>
+        </div>
+      </section>
+
+      <div class="project-banner">
+        <div
+          class="img-placeholder"
+          style="
+            height: 300px;
+            background: linear-gradient(135deg, #1e3a8a, #000);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          INTERFACE GAMEHUB
+        </div>
+      </div>
+
+      <div class="project-details-grid">
+        <aside class="project-sidebar">
+          <div class="info-box">
+            <h3>Fiche Technique</h3>
+            <ul class="info-list">
+              <li><strong>Années :</strong> 2025/2026 (S3)</li>
+              <li><strong>Type :</strong> Projet Universitaire (SAE)</li>
+              <li><strong>Rôle :</strong> Développement Full Stack</li>
+              <li>
+                <strong>Architecture :</strong> MVC (Model-View-Controller)
+              </li>
+            </ul>
+
+            <hr class="divider" style="margin: 1.5rem 0" />
+
+            <h3>Liens</h3>
+            <a
+              href="https://iut-git.unice.fr/sae_s301/sae_s301_projet_gamehub.git"
+              target="_blank"
+              class="btn btn-black"
+              style="
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-size: 0.9rem;
+              "
+            >
+              Voir le dépôt (Git) ↗
+            </a>
+          </div>
+        </aside>
+
+        <div class="project-content">
+          <h2>Le Contexte</h2>
+          <p>
+            GameHub est un réseau social moderne conçu pour permettre aux gamers
+            de partager leurs expériences. L'objectif technique de ce projet
+            (SAE S3.01) était de développer une application web complète et
+            sécurisée en respectant une architecture
+            <strong>MVC (Modèle-Vue-Contrôleur)</strong> stricte, sans utiliser
+            de framework PHP existant.
+          </p>
+
+          <h2>Fonctionnalités & Réalisations</h2>
+          <p>
+            J'ai participé au développement complet de l'application, du backend
+            au frontend :
+          </p>
+          <ul class="content-list">
+            <li>
+              <strong>Architecture MVC :</strong> Structuration du projet en
+              séparant la logique métier (PHP/PDO), les contrôleurs et les vues
+              pour un code maintenable.
+            </li>
+            <li>
+              <strong>Fonctionnalités sociales :</strong> Système de posts,
+              votes (Like/Dislike), commentaires avec tri intelligent, gestion
+              d'amis et abonnements (Follow).
+            </li>
+            <li>
+              <strong>Administration :</strong> Création d'un panneau
+              d'administration sécurisé pour la modération (bannissement des
+              utilisateurs, logs d'activité).
+            </li>
+            <li>
+              <strong>Interface Utilisateur :</strong> Design responsive avec
+              gestion du thème Sombre/Clair et notifications en temps réel.
+            </li>
+          </ul>
+
+          <h2>Ce que j'ai appris</h2>
+          <p>
+            Ce projet a été fondamental pour ma maîtrise du
+            <strong>PHP</strong> et de la
+            <strong>Programmation Orientée Objet (POO)</strong>. J'ai appris à
+            sécuriser une application (hachage des mots de passe, protection
+            contre les injections SQL et failles XSS) et à concevoir une base de
+            données relationnelle complexe (gestion des relations d'amitié,
+            notifications, messagerie).
+          </p>
+
+          <h2>Galerie</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <div
+                style="
+                  background: #eee;
+                  height: 150px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #888;
+                "
+              >
+                Fil d'actualité
+              </div>
+              <figcaption>Page d'accueil et Posts</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div
+                style="
+                  background: #eee;
+                  height: 150px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #888;
+                "
+              >
+                Panneau Admin
+              </div>
+              <figcaption>Interface d'administration</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Enora Saunier | BUT Informatique.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
