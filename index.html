@@ -1,16 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enora Saunier | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
         <a href="index.html" aria-label="Accueil">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
+                
+                <defs>
+                    <linearGradient id="gradient-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a78bfa; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e879f9; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
@@ -37,49 +43,55 @@
     </header>
 
     <main>
-        <section class="hero">
-            
-            <div class="hero-content">
-                <h1>Enora Saunier</h1>
-                <p class="subtitle">Étudiante en BUT Informatique</p>
-                
-                <p class="intro-text">
-                    Étudiante en deuxième année, j'ai 20 ans et je suis passionnée par les jeux vidéo et la culture japonaise. 
-                    Je vous invite à découvrir mes projets et compétences à travers mon site personnel.
-                </p>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Enora Saunier</h1>
+          <p class="subtitle">Étudiante en BUT Informatique</p>
 
-                <div class="stage-banner">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon banner-icon" viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    Recherche de Stage : Du 13 avril à mi-juin 2026.
-                </div>
+          <p class="intro-text">
+            Étudiante en deuxième année, j'ai 20 ans et je suis passionnée par
+            les jeux vidéo et la culture japonaise. Je vous invite à découvrir
+            mes projets et compétences à travers mon site personnel.
+          </p>
 
-                <div class="cta-group">
-                    <a href="about.html" class="btn btn-blue">À Propos</a>
-                    <a href="projects.html" class="btn btn-purple">Mes Projets</a>
-                    <a href="contact.html" class="btn btn-black">Contact</a>
-                </div>
-                
-                <div style="margin-top: 30px; font-size: 0.9rem;">
-                    <a href="#">↗ LinkedIn</a> &nbsp;
-                    <a href="#">↗ GitHub</a> &nbsp;
-                    <a href="mailto:tonemail@exemple.com">↗ Email</a>
-                </div>
-            </div>
+          <div class="stage-banner">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon banner-icon"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Recherche de Stage : Du 13 avril à mi-juin 2026.
+          </div>
 
-            <div class="hero-image">
-                <img src="assets/img/photo_profil.jpg" alt="Enora Saunier" id="hero-profile-pic">
-            </div>
+          <div class="cta-group">
+            <a href="about.html" class="btn btn-blue">À Propos</a>
+            <a href="projects.html" class="btn btn-purple">Mes Projets</a>
+            <a href="contact.html" class="btn btn-black">Contact</a>
+          </div>
 
-        </section>
+          <div style="margin-top: 30px; font-size: 0.9rem">
+            <a href="#">↗ LinkedIn</a> &nbsp; <a href="#">↗ GitHub</a> &nbsp;
+            <a href="mailto:tonemail@exemple.com">↗ Email</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/img/photo_profil.jpg"
+            alt="Enora Saunier"
+            id="hero-profile-pic"
+          />
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Enora Saunier | BUT Informatique.</p>
+      <p>© 2026 Enora Saunier | BUT Informatique.</p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

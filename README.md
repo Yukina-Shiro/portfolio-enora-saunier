@@ -49,6 +49,7 @@ Le site est structuré de manière modulaire pour faciliter la maintenance et l'
 │   ├── minecraft.html
 │   ├── mediatheque.html
 │   ├── game-of-life.html
+│   ├── gamehub.html
 │   ├── edt.html
 │   ├── vm-linux.html
 │   └── bitcoin.html
@@ -96,7 +97,7 @@ Ouvrez simplement le fichier ```index.html``` dans votre navigateur préféré.
 Enora Saunier Étudiante en BUT Informatique (2e année) - IUT Nice Côte d'Azur.
 
 - **GitHub** : [@Yukina-Shiro](https://github.com/Yukina-Shiro/)
-- **LinkedIn** : [Enora Saunier]([https://github.com/Yukina-Shiro/](https://www.linkedin.com/in/enora-saunier/))
+- **LinkedIn** : [Enora Saunier]((https://www.linkedin.com/in/enora-saunier/))
 
 ---
 
