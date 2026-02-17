@@ -364,19 +364,20 @@ h1 {
   background-color: #fafafa; /* Fond très légèrement gris */
   padding: 2rem;
   border-radius: 12px;
-  border-left: 5px solid var(--accent-purple); /* Rappel couleur Passion */
+  border-left: 5px solid var(--accent-blue); 
 }
 
 .stage-alert {
   margin-top: 1.5rem;
-  background-color: #eef2ff; /* Fond bleu très pâle */
-  color: #1e40af; /* Texte bleu foncé */
+  background-color: #fef3c7; /* Fond jaune pâle/beige */
+  color: #92400e; /* Texte marron foncé */
   padding: 15px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  border: 1px solid #c7d2fe;
+  border: 1px solid #d97706;
 }
+
 
 /* --- STYLE DES COMPÉTENCES (SKILLS) --- */
 
@@ -438,12 +439,11 @@ h1 {
 .tag-blue {
   background-color: var(--bg-color-blue); /* Bleu foncé */
 }
-/* Si tu préfères le bleu clair du bouton accueil, remplace par var(--accent-blue) */
 
 .tag-purple {
   background-color: var(
-    --bg-color-purple
-  ); /* Violet foncé comme sur le screen */
+    --bg-color-purple 
+  ); /* Violet foncé */
 }
 
 /* --- PAGE PROJETS --- */
@@ -680,7 +680,7 @@ h1 {
   }
 
   .project-sidebar {
-    order: -1; /* La fiche technique passe au dessus du texte sur mobile ? ou enlever pour laisser en dessous */
+    order: -1; /* La fiche technique passe au dessus du texte sur mobile */
     margin-bottom: 2rem;
   }
 }
@@ -710,7 +710,6 @@ h1 {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  /* Optionnel : petite rotation pour le style "scrapbook" */
   transition: transform 0.3s ease;
 }
 
@@ -744,7 +743,7 @@ h1 {
   margin-bottom: 1.5rem;
   color: #444;
   line-height: 1.7;
-  text-align: justify; /* Texte justifié pour faire "pro" comme un magazine */
+  text-align: justify; /* Texte justifié pour faire comme un magazine */
 }
 
 /* Style des images dans la liste des passions */
@@ -791,15 +790,15 @@ h1 {
 }
 
 .hobby-banner {
-  height: 300px; /* Moins haut que la bannière projet si tu veux */
+  height: 300px; 
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar "Favoris" spécifique */
+/* Sidebar Favoris */
 .favorites-box {
-  background: #faf5ff; /* Fond violet très très pâle */
+  background: #faf5ff; /* Fond violet très pâle */
   padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid #e9d5ff; /* Bordure violette pâle */
@@ -913,7 +912,7 @@ figure {
   height: 200px; /* On force une hauteur uniforme pour la grille */
   object-fit: cover; /* L'image remplit la case sans être déformée (zoomée/rognée) */
   display: block; /* Supprime l'espace vide sous l'image */
-  border-radius: 12px 12px 0 0; /* Arrondi seulement en haut si y'a une légende */
+  border-radius: 12px 12px 0 0; /* Arrondi seulement en haut s'il y a une légende */
 }
 
 /* La légende (Caption) */
@@ -1041,7 +1040,7 @@ figcaption {
   width: 100%;
   padding: 12px 15px;
   border: 2px solid #e5e7eb;
-  border-radius: 8px; /* Coins arrondis pour tes champs */
+  border-radius: 8px; /* Coins arrondis */
   font-family: inherit;
   font-size: 1rem;
   transition: border-color 0.3s;
@@ -1138,7 +1137,7 @@ footer {
 
   /* Ajustement de la section Hero sur mobile pour que ça respire */
   .hero {
-    flex-direction: column-reverse; /* Image en haut, texte en bas sur mobile ? Ou l'inverse. */
+    flex-direction: column-reverse; /* Image en haut, texte en bas sur mobile */
     text-align: center;
     padding: 2rem 5%;
     justify-content: center;
