@@ -1,122 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VM Linux Astronomie | Enora Saunier</title>
-    
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
 
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-        <a href="../index.html" aria-label="Accueil">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-        </a>
-        <button class="burger-menu" aria-label="Ouvrir le menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../about.html">À Propos</a></li>
-                <li><a href="../projects.html" class="active">Projets</a></li>
-                <li><a href="../skills.html">Compétences</a></li>
-                <li><a href="../hobbies.html">Passions</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../cv.html">CV</a></li>
-            </ul>
-        </nav>
+      <a href="../index.html" aria-label="Accueil">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon nav-icon"
+          viewBox="0 0 24 24"
+        >
+          <defs>
+            <linearGradient
+              id="gradient-violet"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #a78bfa; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #e879f9; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </a>
+
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../about.html">À Propos</a></li>
+          <li><a href="../projects.html" class="active">Projets</a></li>
+          <li><a href="../kills.html">Compétences</a></li>
+          <li><a href="../hobbies.html">Passions</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../cv.html">CV</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-container">
-        
-        <div style="margin-bottom: 2rem;">
-            <a href="../projects.html" class="back-link">← Retour aux projets</a>
+      <div style="margin-bottom: 2rem">
+        <a href="../projects.html" class="back-link">← Retour aux projets</a>
+      </div>
+
+      <section class="project-header">
+        <h1>Configuration VM Scientifique</h1>
+        <p class="subtitle">
+          Déploiement d'un environnement Linux optimisé pour l'astronomie
+        </p>
+
+        <div
+          class="tags-container"
+          style="justify-content: center; margin-top: 1rem"
+        >
+          <span class="tag tag-blue">Linux / Ubuntu</span>
+          <span class="tag tag-blue">Serveur LAMP</span>
+          <span class="tag tag-purple">SysAdmin</span>
         </div>
+      </section>
 
-        <section class="project-header">
-            <h1>Configuration VM Scientifique</h1> 
-            <p class="subtitle">Déploiement d'un environnement Linux optimisé pour l'astronomie</p>
-            
-            <div class="tags-container" style="justify-content: center; margin-top: 1rem;">
-                <span class="tag tag-blue">Linux / Ubuntu</span>
-                <span class="tag tag-blue">Serveur LAMP</span>
-                <span class="tag tag-purple">SysAdmin</span>
-            </div>
-        </section>
-
-        <div class="project-banner">
-            <div class="img-placeholder" style="height: 300px; background: #475569; color: white; border-radius: 12px; display:flex; align-items:center; justify-content:center;">
-                ENVIRONNEMENT LINUX & TERMINAL
-            </div>
+      <div class="project-banner">
+        <div
+          class="img-placeholder"
+          style="
+            height: 300px;
+            background: #475569;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          ENVIRONNEMENT LINUX & TERMINAL
         </div>
+      </div>
 
-        <div class="project-details-grid">
-            
-            <aside class="project-sidebar">
-                <div class="info-box">
-                    <h3>Fiche Technique</h3>
-                    <ul class="info-list">
-                        <li><strong>Année :</strong> 2025</li>
-                        <li><strong>Type :</strong> Projet Universitaire</li>
-                        <li><strong>OS :</strong> Ubuntu (Linux)</li>
-                        <li><strong>Outils :</strong> Apache, MySQL, Bash</li>
-                    </ul>
-                    
-                    <hr class="divider" style="margin: 1.5rem 0;">
-                    
-                    <h3>Liens</h3>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-black" style="width:100%; display:block; text-align:center; font-size:0.9rem;">
-                        Consulter la documentation ↗
-                    </a>
-                </div>
-            </aside>
+      <div class="project-details-grid">
+        <aside class="project-sidebar">
+          <div class="info-box">
+            <h3>Fiche Technique</h3>
+            <ul class="info-list">
+              <li><strong>Année :</strong> 2025</li>
+              <li><strong>Type :</strong> Projet Universitaire</li>
+              <li><strong>OS :</strong> Ubuntu (Linux)</li>
+              <li><strong>Outils :</strong> Apache, MySQL, Bash</li>
+            </ul>
 
-            <div class="project-content">
-                
-                <h2>Le Contexte</h2>
-                <p>
-                    Les scientifiques ont souvent besoin d'environnements informatiques stables et pré-configurés pour traiter leurs données sans perdre de temps en installation.
-                    L'objectif était de fournir une machine virtuelle (VM) "clé en main" pour des astronomes, intégrant tous les outils nécessaires au calcul et à l'hébergement de données locales.
-                </p>
+            <hr class="divider" style="margin: 1.5rem 0" />
 
-                <h2>Mes Missions & Réalisations</h2>
-                <p>En tant qu'administratrice système sur ce projet, j'ai réalisé :</p>
-                <ul class="content-list">
-                    <li><strong>Installation & Optimisation :</strong> Déploiement d'une distribution <strong>Ubuntu</strong> allégée, suppression des paquets inutiles pour optimiser les performances de calcul.</li>
-                    <li><strong>Serveur LAMP :</strong> Configuration complète de la stack (Linux, Apache, MySQL, PHP) permettant aux chercheurs d'héberger leurs outils web internes et bases de données d'observations.</li>
-                    <li><strong>Environnement Logiciel :</strong> Installation automatisée de logiciels spécialisés (ex: Stellarium, KStars) et de bibliothèques Python scientifiques.</li>
-                    <li><strong>Documentation :</strong> Rédaction d'un guide technique complet pour permettre aux utilisateurs de prendre en main la VM et de la redéployer si nécessaire.</li>
-                </ul>
+            <h3>Liens</h3>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-black"
+              style="
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-size: 0.9rem;
+              "
+            >
+              Consulter la documentation ↗
+            </a>
+          </div>
+        </aside>
 
-                <h2>Ce que j'ai appris</h2>
-                <p>
-                    Ce projet m'a plongée dans le monde de l'<strong>administration système avancée</strong>. 
-                    J'ai appris à configurer finement un environnement Linux pour un besoin métier spécifique et j'ai compris l'importance cruciale de la documentation technique pour assurer la pérennité d'une solution.
-                </p>
+        <div class="project-content">
+          <h2>Le Contexte</h2>
+          <p>
+            Les scientifiques ont souvent besoin d'environnements informatiques
+            stables et pré-configurés pour traiter leurs données sans perdre de
+            temps en installation. L'objectif était de fournir une machine
+            virtuelle (VM) "clé en main" pour des astronomes, intégrant tous les
+            outils nécessaires au calcul et à l'hébergement de données locales.
+          </p>
 
-                <h2>Galerie</h2>
-                <div class="gallery-grid">
-                    <div style="background:#eee; height:150px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#888;">Terminal Config</div>
-                    <div style="background:#eee; height:150px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#888;">Page Test Serveur</div>
-                </div>
+          <h2>Mes Missions & Réalisations</h2>
+          <p>
+            En tant qu'administratrice système sur ce projet, j'ai réalisé :
+          </p>
+          <ul class="content-list">
+            <li>
+              <strong>Installation & Optimisation :</strong> Déploiement d'une
+              distribution <strong>Ubuntu</strong> allégée, suppression des
+              paquets inutiles pour optimiser les performances de calcul.
+            </li>
+            <li>
+              <strong>Serveur LAMP :</strong> Configuration complète de la stack
+              (Linux, Apache, MySQL, PHP) permettant aux chercheurs d'héberger
+              leurs outils web internes et bases de données d'observations.
+            </li>
+            <li>
+              <strong>Environnement Logiciel :</strong> Installation automatisée
+              de logiciels spécialisés (ex: Stellarium, KStars) et de
+              bibliothèques Python scientifiques.
+            </li>
+            <li>
+              <strong>Documentation :</strong> Rédaction d'un guide technique
+              complet pour permettre aux utilisateurs de prendre en main la VM
+              et de la redéployer si nécessaire.
+            </li>
+          </ul>
 
+          <h2>Ce que j'ai appris</h2>
+          <p>
+            Ce projet m'a plongée dans le monde de l'<strong
+              >administration système avancée</strong
+            >. J'ai appris à configurer finement un environnement Linux pour un
+            besoin métier spécifique et j'ai compris l'importance cruciale de la
+            documentation technique pour assurer la pérennité d'une solution.
+          </p>
+
+          <h2>Galerie</h2>
+          <div class="gallery-grid">
+            <div
+              style="
+                background: #eee;
+                height: 150px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #888;
+              "
+            >
+              Terminal Config
             </div>
+            <div
+              style="
+                background: #eee;
+                height: 150px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #888;
+              "
+            >
+              Page Test Serveur
+            </div>
+          </div>
         </div>
-
+      </div>
     </main>
 
     <footer>
-        <p>© 2026 Enora Saunier | BUT Informatique.</p>
+      <p>© 2026 Enora Saunier | BUT Informatique.</p>
     </footer>
 
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>
