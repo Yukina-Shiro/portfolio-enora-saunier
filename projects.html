@@ -1,179 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mes Projets | Enora Saunier</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <a href="index.html" aria-label="Accueil">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon nav-icon" viewBox="0 0 24 24">
-                
-                <defs>
-                    <linearGradient id="gradient-violet" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#a78bfa; stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#e879f9; stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-        </a>
+      <a href="index.html" aria-label="Accueil">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon nav-icon"
+          viewBox="0 0 24 24"
+        >
+          <defs>
+            <linearGradient
+              id="gradient-violet"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #a78bfa; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #e879f9; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </a>
 
-        <button class="burger-menu" aria-label="Ouvrir le menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="projects.html" class="active">Projets</a></li>
-                <li><a href="skills.html">Compétences</a></li>
-                <li><a href="hobbies.html">Passions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </nav>
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">À Propos</a></li>
+          <li><a href="projects.html" class="active">Projets</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="hobbies.html">Passions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-container">
-        <section class="intro-section">
-            <h1>Mes Projets Techniques</h1>
-            <p>Voici une sélection des projets universitaires et personnels qui m'ont permis de développer mes compétences.</p>
-        </section>
+      <section class="intro-section">
+        <h1>Mes Projets Techniques</h1>
+        <p>
+          Voici une sélection des projets universitaires et personnels qui m'ont
+          permis de développer mes compétences.
+        </p>
+      </section>
 
-        <div class="filters-container">
-            <button class="filter-btn active" data-filter="all">Tous</button>
-            <button class="filter-btn" data-filter="java">Java</button>
-            <button class="filter-btn" data-filter="c">C</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="data">Data & SQL</button>
-        </div>
+      <div class="filters-container">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="c">C</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="data">Data & SQL</button>
+      </div>
 
-        <div class="projects-grid">
-            
-            <article class="project-card" data-category="java c data">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#581c87;">MC</div>
-                </div>
-                <div class="card-content">
-                    <h3>Minecraft Card Game</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">Java</span>
-                        <span class="mini-tag">C</span>
-                        <span class="mini-tag">PostgreSQL</span>
-                    </div>
-                    <p>Développement complet d'un jeu de cartes client-serveur avec gestion de collection et blockchain.</p>
-                    <a href="projects/minecraft.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+      <div class="projects-grid">
+        <article class="project-card" data-category="java web data">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #9f19a9">ASB</div>
+          </div>
+          <div class="card-content">
+            <h3>FUT Anime</h3>
+            <div class="card-tags">
+              <span class="mini-tag">Java</span>
+              <span class="mini-tag">HTML/CSS</span>
+              <span class="mini-tag">JavaScript</span>
+            </div>
+            <p>
+              Application web de type Gacha inspirée de Fifa Ultimate Team sur
+              le thème des anime.
+            </p>
+            <a href="projects/fut_anime.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-            <article class="project-card" data-category="web data">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#1e3a8a;">WEB</div>
-                </div>
-                <div class="card-content">
-                    <h3>Site Médiathèque</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">PHP</span>
-                        <span class="mini-tag">SQL</span>
-                        <span class="mini-tag">HTML/CSS</span>
-                    </div>
-                    <p>Site dynamique permettant de consulter, rechercher et gérer des médias (CRUD complet).</p>
-                    <a href="projects/mediatheque.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="java c data">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #581c87">MC</div>
+          </div>
+          <div class="card-content">
+            <h3>Minecraft Card Game</h3>
+            <div class="card-tags">
+              <span class="mini-tag">Java</span>
+              <span class="mini-tag">C</span>
+              <span class="mini-tag">PostgreSQL</span>
+            </div>
+            <p>
+              Développement complet d'un jeu de cartes client-serveur avec
+              gestion de collection et blockchain.
+            </p>
+            <a href="projects/minecraft.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-            <article class="project-card" data-category="web data">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#1e1b4b;">HUB</div>
-                </div>
-                <div class="card-content">
-                    <h3>GameHub</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">PHP / MVC</span>
-                        <span class="mini-tag">MySQL</span>
-                        <span class="mini-tag">JS</span>
-                    </div>
-                    <p>Réseau social complet pour gamers : fil d'actualité, système d'amis, chat en temps réel et administration.</p>
-                    <a href="projects/gamehub.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="web data">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #1e3a8a">WEB</div>
+          </div>
+          <div class="card-content">
+            <h3>Site Médiathèque</h3>
+            <div class="card-tags">
+              <span class="mini-tag">PHP</span>
+              <span class="mini-tag">SQL</span>
+              <span class="mini-tag">HTML/CSS</span>
+            </div>
+            <p>
+              Site dynamique permettant de consulter, rechercher et gérer des
+              médias (CRUD complet).
+            </p>
+            <a href="projects/mediatheque.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-            <article class="project-card" data-category="c web">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#0f172a;">C</div>
-                </div>
-                <div class="card-content">
-                    <h3>Jeu de la Vie</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">C</span>
-                        <span class="mini-tag">Algorithmique</span>
-                    </div>
-                    <p>Simulation du célèbre automate cellulaire et site web explicatif de la démarche.</p>
-                    <a href="projects/game-of-life.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="web data">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #1e1b4b">HUB</div>
+          </div>
+          <div class="card-content">
+            <h3>GameHub</h3>
+            <div class="card-tags">
+              <span class="mini-tag">PHP / MVC</span>
+              <span class="mini-tag">MySQL</span>
+              <span class="mini-tag">JS</span>
+            </div>
+            <p>
+              Réseau social complet pour gamers : fil d'actualité, système
+              d'amis, chat en temps réel et administration.
+            </p>
+            <a href="projects/gamehub.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-            <article class="project-card" data-category="java web">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#2563eb;">EDT</div>
-                </div>
-                <div class="card-content">
-                    <h3>Générateur d'EDT</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">Java</span>
-                        <span class="mini-tag">HTML/CSS</span>
-                    </div>
-                    <p>Programme de création d'emploi du temps automatique avec algorithme de tri.</p>
-                    <a href="projects/edt.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="c web">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #0f172a">C</div>
+          </div>
+          <div class="card-content">
+            <h3>Jeu de la Vie</h3>
+            <div class="card-tags">
+              <span class="mini-tag">C</span>
+              <span class="mini-tag">Algorithmique</span>
+            </div>
+            <p>
+              Simulation du célèbre automate cellulaire et site web explicatif
+              de la démarche.
+            </p>
+            <a href="projects/game-of-life.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-            <article class="project-card" data-category="all">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#475569;">VM</div>
-                </div>
-                <div class="card-content">
-                    <h3>Config VM Linux</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">Linux</span>
-                        <span class="mini-tag">SysAdmin</span>
-                    </div>
-                    <p>Mise en place d'un environnement Ubuntu optimisé et serveur LAMP pour des scientifiques.</p>
-                    <a href="projects/vm-linux.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="java web">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #2563eb">EDT</div>
+          </div>
+          <div class="card-content">
+            <h3>Générateur d'EDT</h3>
+            <div class="card-tags">
+              <span class="mini-tag">Java</span>
+              <span class="mini-tag">HTML/CSS</span>
+            </div>
+            <p>
+              Programme de création d'emploi du temps automatique avec
+              algorithme de tri.
+            </p>
+            <a href="projects/edt.html" class="btn-link">En savoir plus →</a>
+          </div>
+        </article>
 
-            <article class="project-card" data-category="web">
-                <div class="card-image">
-                    <div class="img-placeholder" style="background:#f59e0b;">BTC</div>
-                </div>
-                <div class="card-content">
-                    <h3>Site Bitcoin</h3>
-                    <div class="card-tags">
-                        <span class="mini-tag">HTML</span>
-                        <span class="mini-tag">CSS</span>
-                    </div>
-                    <p>Site de vulgarisation technique sur le fonctionnement de la blockchain et du Bitcoin.</p>
-                    <a href="projects/bitcoin.html" class="btn-link">En savoir plus →</a>
-                </div>
-            </article>
+        <article class="project-card" data-category="all">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #475569">VM</div>
+          </div>
+          <div class="card-content">
+            <h3>Config VM Linux</h3>
+            <div class="card-tags">
+              <span class="mini-tag">Linux</span>
+              <span class="mini-tag">SysAdmin</span>
+            </div>
+            <p>
+              Mise en place d'un environnement Ubuntu optimisé et serveur LAMP
+              pour des scientifiques.
+            </p>
+            <a href="projects/vm-linux.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
 
-        </div>
+        <article class="project-card" data-category="all">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #4c8e50">
+              PHOENEUF
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Gestion d'un projet</h3>
+            <div class="card-tags">
+              <span class="mini-tag">Gestion</span>
+              <span class="mini-tag">Management</span>
+              <span class="mini-tag">Maquettage</span>
+            </div>
+            <p>
+              Projet universitaire : Gestion d'un projet de réalisation d'un
+              site de e-commerce
+            </p>
+            <a href="projects/phoeneuf.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="card-image">
+            <div class="img-placeholder" style="background: #f59e0b">BTC</div>
+          </div>
+          <div class="card-content">
+            <h3>Site Bitcoin</h3>
+            <div class="card-tags">
+              <span class="mini-tag">HTML</span>
+              <span class="mini-tag">CSS</span>
+            </div>
+            <p>
+              Site de vulgarisation technique sur le fonctionnement de la
+              blockchain et du Bitcoin.
+            </p>
+            <a href="projects/bitcoin.html" class="btn-link"
+              >En savoir plus →</a
+            >
+          </div>
+        </article>
+      </div>
     </main>
 
     <footer>
-        <p>© 2026 Enora Saunier | BUT Informatique.</p>
+      <p>© 2026 Enora Saunier | BUT Informatique.</p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

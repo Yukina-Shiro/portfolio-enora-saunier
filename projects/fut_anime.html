@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUT Anime | Enora Saunier</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" aria-label="Accueil">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon nav-icon"
+          viewBox="0 0 24 24"
+        >
+          <defs>
+            <linearGradient
+              id="gradient-violet"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #a78bfa; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #e879f9; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </a>
+
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../about.html">À Propos</a></li>
+          <li><a href="../projects.html" class="active">Projets</a></li>
+          <li><a href="../skills.html">Compétences</a></li>
+          <li><a href="../hobbies.html">Passions</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <div style="margin-bottom: 2rem">
+        <a href="../projects.html" class="back-link">← Retour aux projets</a>
+      </div>
+
+      <section class="project-header">
+        <h1>Anime Squad Battle</h1>
+        <p class="subtitle">
+          Développement d'une application web Fullstack inspirée de Fifa
+          Ultimate Team (Gacha & Stratégie)
+        </p>
+
+        <div
+          class="tags-container"
+          style="justify-content: center; margin-top: 1rem"
+        >
+          <span class="tag tag-blue">Java Spring Boot</span>
+          <span class="tag tag-blue">PostgreSQL</span>
+          <span class="tag tag-blue">Vanilla JS</span>
+          <span class="tag tag-blue">Tailwind CSS</span>
+        </div>
+      </section>
+
+      <div class="project-banner">
+        <div
+          class="img-placeholder"
+          style="
+            height: 300px;
+            background: #7c30cc;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+          "
+        >
+          FUT Anime
+        </div>
+      </div>
+
+      <div class="project-details-grid">
+        <aside class="project-sidebar">
+          <div class="info-box">
+            <h3>Fiche Technique</h3>
+            <ul class="info-list">
+              <li><strong>Année :</strong> 2026 (S4)</li>
+              <li><strong>Type :</strong> Projet Universitaire</li>
+              <li><strong>Rôle :</strong> Développeuse Fullstack</li>
+              <li><strong>Équipe :</strong> 3 personnes</li>
+            </ul>
+
+            <hr class="divider" style="margin: 1.5rem 0" />
+
+            <h3>Liens</h3>
+            <a
+              href="https://github.com/VOTRE_PSEUDO/anime-ultimate-team"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-black"
+              style="
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-size: 0.9rem;
+              "
+            >
+              Voir sur GitHub ↗
+            </a>
+          </div>
+        </aside>
+
+        <div class="project-content">
+          <h2>Le Contexte</h2>
+          <p>
+            Anime Squad Battle est une application web interactive de type
+            "Gacha" (collection de cartes) combinée à un jeu de gestion d'équipe
+            stratégique, fortement inspirée du mode Ultimate Team de la
+            franchise FIFA, mais transposée dans l'univers des anime (Naruto,
+            Dragon Ball, One Piece, Jujutsu Kaisen, etc.). Le joueur commence
+            avec un montant de monnaie de départ, invoque des personnages en
+            ouvrant des packs, compose la meilleure formation possible sur le
+            terrain en respectant les rôles, et affronte d'autres joueurs pour
+            gagner des pièces et améliorer son équipe. Ce projet a été réalisé
+            dans le cadre d'un projet universitaire Fullstack, mettant en avant
+            une séparation stricte entre une API REST robuste et une
+            architecture Frontend (SPA) moderne en Vanilla JS.
+          </p>
+
+          <h2>Mes Missions & Réalisations</h2>
+          <p>
+            J'étais en charge de la conception de l'architecture globale, du
+            développement de l'API Backend et de l'intégration de l'interface
+            Frontend :
+          </p>
+          <ul class="content-list">
+            <li>
+              Développement de l'API REST avec
+              <strong>Java Spring Boot 3</strong> et persistance des données via
+              <strong>Hibernate/JPA</strong> sous <strong>PostgreSQL</strong>.
+            </li>
+            <li>
+              Intégration d'une interface utilisateur dynamique (SPA) en
+              <strong>Vanilla JavaScript</strong> et stylisée avec
+              <strong>Tailwind CSS</strong> (Thème Néon/Cyberpunk).
+            </li>
+            <li>
+              Création d'un système interactif en
+              <strong>Drag & Drop</strong> pour la gestion de la formation sur
+              le terrain, avec sauvegarde asynchrone instantanée.
+            </li>
+            <li>
+              Sécurisation de l'économie du jeu (achats de packs, système de
+              marché) via la gestion stricte des transactions
+              (<code>@Transactional</code>) pour éviter les failles de
+              duplication ou de soldes négatifs.
+            </li>
+          </ul>
+
+          <h2>Ce que j'ai appris</h2>
+          <p>
+            Ce projet m'a permis de maîtriser la création d'une architecture
+            backend robuste (contrôleurs, services, DTO) et de comprendre les
+            enjeux de la synchronisation d'état côté client sans utiliser de
+            framework lourd comme React. J'ai également renforcé mes compétences
+            dans la gestion asynchrone (Promises, appels Fetch avec
+            intercepteurs d'erreurs) et la conception de bases de données
+            relationnelles complexes.
+          </p>
+
+          <h2>Galerie</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/authpage.png"
+                alt="Page d'authentification avec connexion et inscription"
+              />
+              <figcaption>Page d'authentification</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/homepage.png"
+                alt="Page d'accueil du site ASB"
+              />
+              <figcaption>Page d'accueil</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/packs.png"
+                alt="Page d'achat des différents packs"
+              />
+              <figcaption>Page d'achat de packs</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/packopened.png"
+                alt="Page d'ouverture d'un pack"
+              />
+              <figcaption>Page d'ouverture de packs</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/collection.png"
+                alt="Page d'affichage de la collection de cartes"
+              />
+              <figcaption>Page de collection</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/team.png"
+                alt="Page d'affichage de l'équipe de jeu à créer"
+              />
+              <figcaption>Page de l'équipe à former</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/battlevictory.png"
+                alt="Page de jeu avec combat entre 2 joueurs après une victoire"
+              />
+              <figcaption>Page de combat avec victoire</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/battledefeat.png"
+                alt="Page de jeu avec combat entre 2 joueurs après une défaite"
+              />
+              <figcaption>Page de combat avec défaite</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/buycards.png"
+                alt="Page d'achat de cartes entre joueurs"
+              />
+              <figcaption>Page d'achat de carte de joueurs</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../assets/img/projects/asb/sellcards.png"
+                alt="Page de vente de carte aux joueurs"
+              />
+              <figcaption>Page de vente de carte aux autres joueurs</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Enora Saunier | BUT Informatique.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
