@@ -2,15 +2,15 @@
 
 :root {
   /* Palette de couleurs */
-  
+
   /* Bleu */
-  --accent-blue: #1d4ed8; 
+  --accent-blue: #1d4ed8;
 
   /* Violet */
-  --accent-purple: #7e22ce; 
+  --accent-purple: #7e22ce;
 
   /* Noir */
-  --accent-dark: #111827; 
+  --accent-dark: #111827;
 
   /* Fonds colorés pour les tags */
   --bg-blue-light: #eff6ff;
@@ -80,11 +80,10 @@ nav a:hover {
   color: var(--accent-purple); /* Petit effet au survol */
 }
 
-
 /* --- AMÉLIORATION INTERACTIVITÉ --- */
 
 /* Gestion du focus pour l'accessibilité clavier */
-a:focus-visible, 
+a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--accent-blue);
   outline-offset: 2px;
@@ -101,7 +100,7 @@ nav a {
   position: relative;
 }
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -125,22 +124,22 @@ nav a.active {
 /* Le style du texte dégradé pour les liens */
 nav a:hover,
 nav a.active {
-    /* Le dégradé : Violet léger vers un rose/violet plus doux */
-    background: linear-gradient(45deg, #a78bfa, #e879f9);
-    
-    /* Découpe le fond selon la forme du texte */
-    -webkit-background-clip: text;
-    background-clip: text;
-    
-    /* On rend le texte transparent pour voir le fond */
-    color: transparent;
+  /* Le dégradé : Violet léger vers un rose/violet plus doux */
+  background: linear-gradient(45deg, #a78bfa, #e879f9);
+
+  /* Découpe le fond selon la forme du texte */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* On rend le texte transparent pour voir le fond */
+  color: transparent;
 }
 
 /* Le style pour l'icône Maison (SVG) au survol */
 a[aria-label="Accueil"]:hover .nav-icon,
 a[aria-label="Accueil"].active .nav-icon {
-    stroke: url(#gradient-violet); 
-    transition: stroke 0.3s ease;
+  stroke: url(#gradient-violet);
+  transition: stroke 0.3s ease;
 }
 
 /* --- SECTION HERO (ACCUEIL) --- */
@@ -364,7 +363,7 @@ h1 {
   background-color: #fafafa; /* Fond très légèrement gris */
   padding: 2rem;
   border-radius: 12px;
-  border-left: 5px solid var(--accent-blue); 
+  border-left: 5px solid var(--accent-blue);
 }
 
 .stage-alert {
@@ -378,6 +377,42 @@ h1 {
   border: 1px solid #d97706;
 }
 
+/* --- BANNIÈRE DE SUCCÈS (STAGE TROUVÉ) --- */
+.success-banner {
+  background: linear-gradient(
+    to right,
+    #eff6ff,
+    #f3e8ff
+  ); /* Dégradé très léger bleu vers violet */
+  border-left: 5px solid var(--accent-purple);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.success-banner .company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain; /* Garde les proportions du logo intactes */
+  border-radius: 8px; /* Léger arrondi pour faire moderne */
+  background-color: white; /* Fond blanc au cas où le logo serait transparent */
+  padding: 3px; /* Petite marge interne pour que le logo respire */
+  flex-shrink: 0; /* Empêche le logo de s'écraser sur les petits écrans */
+}
+
+.success-banner .emoji {
+  font-size: 1.8rem;
+}
+
+.success-banner strong {
+  color: var(--accent-purple);
+  font-weight: 700;
+}
 
 /* --- STYLE DES COMPÉTENCES (SKILLS) --- */
 
@@ -441,9 +476,51 @@ h1 {
 }
 
 .tag-purple {
-  background-color: var(
-    --bg-color-purple 
-  ); /* Violet foncé */
+  background-color: var(--bg-color-purple); /* Violet foncé */
+}
+
+/* --- AMÉLIORATION DE LA PAGE COMPÉTENCES (SKILL CARDS) --- */
+
+.skills-grid {
+  display: grid;
+  /* Crée des colonnes qui s'adaptent automatiquement (min 300px de large) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Espace entre les cartes */
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Ombre très douce */
+  border: 1px solid #f0f0f0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Animations au survol des cartes */
+.skill-card:hover {
+  transform: translateY(-5px); /* La carte se soulève */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* L'ombre grandit */
+}
+
+/* Bordure colorée au survol selon le type de carte */
+.skill-card.blue-card:hover {
+  border-color: var(--accent-blue);
+}
+
+.skill-card.purple-card:hover {
+  border-color: var(--accent-purple);
+}
+
+/* On enlève la marge supérieure du titre puisqu'il est dans une carte */
+.skill-card .skill-category-title {
+  margin-top: 0;
+  display: flex;
+  align-items: center; /* Aligne l'icône et le texte */
 }
 
 /* --- PAGE PROJETS --- */
@@ -790,7 +867,7 @@ h1 {
 }
 
 .hobby-banner {
-  height: 300px; 
+  height: 300px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -1078,20 +1155,52 @@ figcaption {
 
 /* --- FOOTER --- */
 footer {
+  background-color: #f9fafb; /* Un fond gris extrêmement clair pour délimiter la fin de page */
+  border-top: 1px solid #e5e7eb; /* Une petite ligne discrète */
+  padding: 3rem 2rem;
+  margin-top: 4rem; /* Repousse le footer vers le bas */
   text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #666;
 }
 
-.footer-links {
-  margin-bottom: 1rem;
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Espace entre les liens et le copyright */
 }
 
-.footer-links a {
-  margin: 0 10px;
-  font-weight: bold;
+/* Le conteneur des liens sociaux */
+.footer-socials {
+  display: flex;
+  gap: 25px; /* Espace horizontal entre chaque lien */
+  font-size: 0.95rem;
+  font-weight: 600;
+  flex-wrap: wrap; /* Si l'écran est trop petit, les liens passent à la ligne automatiquement ! */
+  justify-content: center;
+}
+
+/* Style des liens sociaux */
+.footer-socials a {
+  color: #444; /* Gris foncé pour ne pas distraire */
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
+  display: inline-block; /* Nécessaire pour que le translateY fonctionne */
+}
+
+/* Effet au survol */
+.footer-socials a:hover {
+  color: var(--accent-purple); /* Devient violet */
+  transform: translateY(-2px); /* Remonte légèrement */
+}
+
+/* Style du copyright */
+.footer-copyright {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
 }
 
 /* --- RESPONSIVE NAVIGATION (MOBILE) --- */
