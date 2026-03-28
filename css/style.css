@@ -446,6 +446,47 @@ h1 {
   ); /* Violet foncé */
 }
 
+/* --- AMÉLIORATION DE LA PAGE COMPÉTENCES (SKILL CARDS) --- */
+
+.skills-grid {
+  display: grid;
+  /* Crée des colonnes qui s'adaptent automatiquement (min 300px de large) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Espace entre les cartes */
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Ombre très douce */
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Animations au survol des cartes */
+.skill-card:hover {
+  transform: translateY(-5px); /* La carte se soulève */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* L'ombre grandit */
+}
+
+/* Bordure colorée au survol selon le type de carte */
+.skill-card.blue-card:hover {
+  border-color: var(--accent-blue);
+}
+
+.skill-card.purple-card:hover {
+  border-color: var(--accent-purple);
+}
+
+/* On enlève la marge supérieure du titre puisqu'il est dans une carte */
+.skill-card .skill-category-title {
+  margin-top: 0;
+  display: flex;
+  align-items: center; /* Aligne l'icône et le texte */
+}
+
 /* --- PAGE PROJETS --- */
 
 /* Zone des filtres */
