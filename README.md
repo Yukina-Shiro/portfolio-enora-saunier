@@ -41,7 +41,8 @@ Le site est structuré de manière modulaire pour faciliter la maintenance et l'
 │   └── docs/            # CV au format PDF
 │
 ├── css/
-│   └── style.css        # Feuille de style unique et centralisée
+│   ├── style.css        # Feuille de style centralisée
+│   └── cv.css           # Feuille de style dédiée à la page CV
 │
 ├── js/
 │   └── script.js        # Scripts d'interactivité (Menu et Filtrage)
@@ -107,4 +108,4 @@ Enora Saunier Étudiante en BUT Informatique (2e année) - IUT Nice Côte d'Azur
 
 ---
 
-_Dernière mise à jour : Mars 2026_
+_Dernière mise à jour : Juin 2026_
