@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon CV | Enora Saunier</title>
+    <title>CV | Enora Saunier</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cv.css" />
   </head>
   <body>
     <header>
@@ -64,50 +65,268 @@
       </nav>
     </header>
 
-    <main class="page-container" style="text-align: center">
-      <section class="intro-section">
+    <main class="page-container">
+      <section class="intro-section" style="margin-bottom: 2rem">
         <h1>Mon Curriculum Vitae</h1>
         <p>
           Vous pouvez visualiser mon parcours en détail ci-dessous ou
           télécharger le document.
         </p>
 
-        <div style="margin-top: 2rem; margin-bottom: 3rem">
+        <div style="margin-top: 1.5rem">
           <a
-            href="assets/docs/CV_Enora_Saunier.pdf"
-            class="btn btn-blue"
+            href="assets/docs/CV_BUT2_Saunier_Enora.pdf"
             download
+            class="btn btn-blue"
+            style="display: inline-flex; align-items: center; gap: 8px"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
-              style="margin-right: 8px"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Télécharger le PDF
+            Télécharger le CV (PDF)
           </a>
         </div>
       </section>
 
-      <div class="pdf-container">
-        <object
-          data="assets/docs/CV_Enora_Saunier.pdf"
-          type="application/pdf"
-          width="100%"
-          height="800px"
-        >
-          <p>
-            Votre navigateur ne peut pas afficher le PDF directement.
-            <a href="assets/docs/CV_Enora_Saunier.pdf"
-              >Cliquez ici pour le télécharger.</a
-            >
-          </p>
-        </object>
-      </div>
+      <article class="cv-document">
+        <div class="cv-header">
+          <div class="cv-header-text">
+            <h2>Enora Saunier</h2>
+            <p class="cv-title">Étudiante en Informatique</p>
+            <p class="cv-subtitle">
+              Deuxième année en BUT Informatique & Aspirante Master MIAGE
+            </p>
+            <ul class="cv-traits">
+              <li>Motivée</li>
+              <li>Rigoureuse</li>
+              <li>Créative</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-body">
+          <aside class="cv-sidebar">
+            <section class="cv-card">
+              <h3>Contact</h3>
+              <address class="cv-contact">
+                <p class="cv-contact-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="cv-icon"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>06450 Lantosque</span>
+                </p>
+                <p class="cv-contact-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="cv-icon"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <span>06 59 50 04 14</span>
+                </p>
+                <p class="cv-contact-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="cv-icon"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <a href="mailto:enora.saunier@etu.unice.fr"
+                    >enora.saunier@etu.unice.fr</a
+                  >
+                </p>
+                <p class="cv-contact-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="cv-icon"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    ></path>
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://www.linkedin.com/in/enora-saunier/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </p>
+              </address>
+            </section>
+
+            <section class="cv-card">
+              <h3>Compétences</h3>
+              <div class="cv-skill-group">
+                <h4>Langages</h4>
+                <p>Python, Java, C, C#, PHP</p>
+              </div>
+              <div class="cv-skill-group">
+                <h4>Web & Bases de données</h4>
+                <p>HTML, CSS, JavaScript, JavaFX, SQL</p>
+              </div>
+              <div class="cv-skill-group">
+                <h4>Outils & Soft skills</h4>
+                <p>
+                  UML (Modélisation), Android Studio, Travail d'équipe, méthodes
+                  Agiles, autonomie et organisation.
+                </p>
+              </div>
+            </section>
+
+            <section class="cv-card">
+              <h3>Langues</h3>
+              <ul class="cv-simple-list">
+                <li><strong>Anglais :</strong> Niveau B2</li>
+                <li><strong>Italien :</strong> Bases</li>
+                <li><strong>Japonais :</strong> Notions</li>
+              </ul>
+            </section>
+
+            <section class="cv-card">
+              <h3>Centres d'intérêt</h3>
+              <ul class="cv-simple-list">
+                <li>Programmation</li>
+                <li>Jeux vidéo</li>
+                <li>Culture japonaise</li>
+                <li>Art graphique</li>
+              </ul>
+            </section>
+          </aside>
+
+          <div class="cv-main-content">
+            <section class="cv-card">
+              <h3>Expérience Professionnelle</h3>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>Développeuse Web (Stagiaire) — YellowTwigs</h4>
+                  <time>Avril 2026 - Juin 2026</time>
+                </div>
+                <p>
+                  Intégration de l'équipe de développement pour une durée de 2
+                  mois. Développement de la version B2B de l'application mobile
+                  <strong>Knock In VIP Messenger</strong> sous
+                  <strong>Android Studio</strong>.
+                </p>
+              </article>
+            </section>
+
+            <section class="cv-card">
+              <h3>Projets Universitaires</h3>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>Développement d'une application</h4>
+                  <time>2025 - BUT2</time>
+                </div>
+                <ul>
+                  <li>
+                    Réalisation d'une plateforme d'échange et de combat de
+                    carte.
+                  </li>
+                  <li>
+                    <strong>Technologies :</strong> JavaFX, maquettage, C,
+                    PostgreSQL.
+                  </li>
+                </ul>
+              </article>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>Application GameHub</h4>
+                  <time>2025 - BUT2</time>
+                </div>
+                <ul>
+                  <li>
+                    Création d'un réseau social complet pour gamers : fil
+                    d'actualité, messagerie temps réel, système
+                    d'administration.
+                  </li>
+                  <li><strong>Technologies :</strong> PHP MVC, SQL, JS.</li>
+                </ul>
+              </article>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>Gestion d'un projet (Phoeneuf)</h4>
+                  <time>2025 - BUT1</time>
+                </div>
+                <ul>
+                  <li>
+                    Réalisation de l'analyse, la conception, le maquettage et la
+                    planification complète d'un site de e-commerce
+                    éco-responsable.
+                  </li>
+                </ul>
+              </article>
+            </section>
+
+            <section class="cv-card">
+              <h3>Formation</h3>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>BUT Informatique</h4>
+                  <time>2024 - 2026</time>
+                </div>
+                <p>IUT Nice Côte d'Azur | Nice</p>
+              </article>
+              <article class="cv-item">
+                <div class="cv-item-header">
+                  <h4>Bachelor sciences et ingénierie</h4>
+                  <time>2023 - 2024</time>
+                </div>
+                <p>Centrale Méditerranée | Nice (1re année)</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </article>
     </main>
 
     <footer>
@@ -127,11 +346,9 @@
           >
           <a href="mailto:enora.saunier@etu.unice.fr">↗ Email</a>
         </div>
-
         <p class="footer-copyright">© 2026 Enora Saunier | BUT Informatique.</p>
       </div>
     </footer>
-
     <script src="js/script.js"></script>
   </body>
 </html>
